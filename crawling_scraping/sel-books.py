@@ -11,7 +11,6 @@ def sel(query):
 
 sel('#nu')
 sel('li#nu')
-
 sel('ul > li#nu')
 sel('#bible #nu')
 sel('#bible > #nu')
