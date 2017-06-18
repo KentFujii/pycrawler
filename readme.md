@@ -9,3 +9,7 @@ python -m venv env
 source env/bin/activate
 pip install -r requirements.txt
 ```
+
+## memo
+
+部分的にchrome headless modeを使う
