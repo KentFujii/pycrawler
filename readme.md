@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ## setup with docker
 
 ```
-build -t ubuntu-phantom .
+docker build -t ubuntu-phantom .
 docker run -it ubuntu-phantom
 python3 ~file_path~
 ```

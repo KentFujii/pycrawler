@@ -24,3 +24,4 @@ RUN mkdir /myapp
 WORKDIR /myapp
 ADD . /myapp
 RUN pip3 install -r requirements.txt
+VOLUME /myapp
