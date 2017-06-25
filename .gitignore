@@ -1,4 +1,5 @@
 env/
 docs.python.jp/
+out/
 ghostdriver.log
 Website.png
