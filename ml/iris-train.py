@@ -5,10 +5,7 @@ from sklearn import svm, metrics
 
 
 def str_to_num(num):
-    if re.match(r'^[0-9\.]+$', num):
-        return float(num)
-    else:
-        return num
+    return float(num) if re.match(r'^[0-9\.]+$', num) else num
 
 
 csv = []
