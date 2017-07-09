@@ -13,3 +13,4 @@ hyakunin.json
 test-tinydb.json
 test.sqlite
 test2.sqlite
+img_recog/mnist/
