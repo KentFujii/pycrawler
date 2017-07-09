@@ -31,5 +31,5 @@ def to_csv(name, maxdata):
     img_f.close()
 
 
-to_csv("train", 1000)
+to_csv("train", 5000)
 to_csv("t10k", 500)
