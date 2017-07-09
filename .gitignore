@@ -14,3 +14,4 @@ test-tinydb.json
 test.sqlite
 test2.sqlite
 img_recog/mnist/
+text_processing/lang/lang/
