@@ -35,15 +35,15 @@ def load_files(path):
 
 
 current_path = path.dirname(__file__)
-data = load_files(current_path + '/lang/trains/*.txt')
-test = load_files(current_path + '/lang/test/*.txt')
-with open(current_path + '/lang/freq.json', 'w', encoding='utf-8') as fp:
+data = load_files(current_path + '/source/lang/train/*.txt')
+test = load_files(current_path + '/source/lang/test/*.txt')
+with open(current_path + '/source/freq.json', 'w', encoding='utf-8') as fp:
     json.dump([data, test], fp)
 
 clf = svm.SVC()
 clf.fit(data['freqs'], data['labels'])
 
-predict = clf.predict(test['labels'])
+predict = clf.predict(test['freqs'])
 
 ac_score = metrics.accuracy_score(test['labels'], predict)
 cl_report = metrics.classification_report(test['labels'], predict)
