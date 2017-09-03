@@ -21,3 +21,4 @@ python3 ~file_path~
 ## memo
 
 部分的にchrome headless modeを使う
+[プロキシサーバー使ってみる](http://www.cybersyndrome.net/plr6.html)
