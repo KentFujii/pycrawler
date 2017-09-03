@@ -21,3 +21,4 @@ text_processing/cgi-bin/freq.pkl
 mushroom.csv
 bmi.csv
 bmi-test.png
+iris.csv

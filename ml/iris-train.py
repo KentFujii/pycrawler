@@ -9,7 +9,7 @@ def str_to_num(num):
 
 
 csv = []
-target_path = path.dirname(__file__) + '/csv/iris.csv'
+target_path = path.dirname(__file__) + '/../iris.csv'
 with open(target_path, 'r', encoding='utf-8') as fp:
     for line in fp:
         line = line.strip()
@@ -18,7 +18,6 @@ with open(target_path, 'r', encoding='utf-8') as fp:
         csv.append(cols)
 
 del csv[0]
-print(csv)
 
 random.shuffle(csv)
 

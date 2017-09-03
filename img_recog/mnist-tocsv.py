@@ -4,9 +4,9 @@ from os import path
 
 def to_csv(name, maxdata):
     current_path = path.dirname(__file__)
-    lbl_f = open(current_path + "/mnist/"+name+"-labels-idx1-ubyte", "rb")
-    img_f = open(current_path + "/mnist/"+name+"-images-idx3-ubyte", "rb")
-    csv_f = open(current_path + "/mnist/"+name+".csv", "w", encoding="utf-8")
+    lbl_f = open(current_path + "/../mnist/"+name+"-labels-idx1-ubyte", "rb")
+    img_f = open(current_path + "/../mnist/"+name+"-images-idx3-ubyte", "rb")
+    csv_f = open(current_path + "/../mnist/"+name+".csv", "w", encoding="utf-8")
     mag, lbl_count = struct.unpack(">II", lbl_f.read(8))
     mag, img_count = struct.unpack(">II", img_f.read(8))
     rows, cols = struct.unpack(">II", img_f.read(8))
@@ -22,7 +22,7 @@ def to_csv(name, maxdata):
         if idx < 10:
             s = "P2 28 28 255\n"
             s += " ".join(sdata)
-            pgm_path = current_path + "/mnist/{0}-{1}-{2}.pgm"
+            pgm_path = current_path + "/../mnist/{0}-{1}-{2}.pgm"
             iname = pgm_path.format(name, idx, label)
             with open(iname, "w", encoding="utf-8") as f:
                 f.write(s)

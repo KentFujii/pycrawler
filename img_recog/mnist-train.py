@@ -16,7 +16,7 @@ def load_csv(fname):
     return {'labels': labels, 'images': images}
 
 
-target_path = path.dirname(__file__) + '/mnist/'
+target_path = path.dirname(__file__) + '/../mnist/'
 data = load_csv(target_path + 'train.csv')
 test = load_csv(target_path + 't10k.csv')
 

@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn import svm, metrics
 from sklearn.model_selection import train_test_split
 
-target_path = path.dirname(__file__) + '/csv/iris.csv'
+target_path = path.dirname(__file__) + '/../iris.csv'
 csv = pd.read_csv(target_path)
 
 csv_data = csv[

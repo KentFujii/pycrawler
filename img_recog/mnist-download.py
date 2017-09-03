@@ -2,7 +2,7 @@ import urllib.request as req
 import gzip
 from os import path, mkdir
 
-savepath = path.dirname(__file__) + '/mnist'
+savepath = path.dirname(__file__) + '/../mnist'
 baseurl = 'http://yann.lecun.com/exdb/mnist'
 files = [
     'train-images-idx3-ubyte.gz',
