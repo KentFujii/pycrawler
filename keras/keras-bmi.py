@@ -1,7 +1,8 @@
 from keras.models import Sequential
 from keras.layers.core import Dense, Dropout, Activation
 from keras.callbacks import EarlyStopping
-import pandas as pd, numpy as np
+import pandas as pd
+import numpy as np
 
 csv = pd.read_csv('bmi.csv')
 csv['weight'] /= 100
@@ -38,7 +39,7 @@ hist = model.fit(
     X_train,
     y_train,
     batch_size=100,
-    nb_epoch=20,
+    epochs=20,
     validation_split=0.1,
     callbacks=[EarlyStopping(monitor='val_loss', patience=2)],
     verbose=1)
