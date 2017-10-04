@@ -22,3 +22,6 @@ python3 ~file_path~
 
 部分的にchrome headless modeを使う
 [プロキシサーバー使ってみる](http://www.cybersyndrome.net/plr6.html)
+
+kerasの理解が追いつかなかったのでここを参考にして復習する
+[無から始めるkeras](https://qiita.com/Ishotihadus/items/6ecf5684c2cbaaa6a5ef)
