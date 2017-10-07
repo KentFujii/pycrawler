@@ -5,6 +5,7 @@ boto==2.48.0
 bz2file==0.98
 certifi==2017.4.17
 chardet==3.0.4
+cssselect==1.0.1
 cycler==0.10.0
 decorator==4.0.11
 entrypoints==0.2.3
@@ -26,6 +27,7 @@ jupyter-client==5.1.0
 jupyter-console==5.2.0
 jupyter-core==4.3.0
 Keras==2.0.8
+lxml==4.0.0
 Markdown==2.6.9
 MarkupSafe==1.0
 matplotlib==2.0.2
@@ -41,6 +43,7 @@ olefile==0.44
 openpyxl==2.4.8
 pandas==0.20.2
 pandocfilters==1.4.2
+parsel==1.2.0
 pexpect==4.2.1
 pickleshare==0.7.4
 Pillow==4.2.1
@@ -71,6 +74,7 @@ tinydb==3.3.1
 tornado==4.5.2
 traitlets==4.3.2
 urllib3==1.21.1
+w3lib==1.18.0
 wcwidth==0.1.7
 Werkzeug==0.12.2
 widgetsnbextension==3.0.2
