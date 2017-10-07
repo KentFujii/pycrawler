@@ -3,6 +3,7 @@ from os import mkdir
 from urllib import request as req
 from urllib.parse import urljoin
 from parsel import Selector
+# import zipfile
 
 url = 'http://keison.sakura.ne.jp'
 res = req.urlopen(url)
@@ -36,9 +37,11 @@ for zip_link in zip_links:
         person = '太宰治'
     else:
         person = '夏目漱石'
-    save_dir = local + '/' + person
+    save_dir = local + '/' + person + '.zip'
     if not path.exists(save_dir):
         print('ZIPファイルをダウンロード')
         if not path.exists(local):
             mkdir('text')
-        req.urlretrieve(zip_link, save_dir + '.zip')
+        req.urlretrieve(zip_link, save_dir)
+        # with zipfile.ZipFile(save_dir, 'r') as inputFile:
+        #     inputFile.extractall()
